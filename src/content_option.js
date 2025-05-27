@@ -1,156 +1,126 @@
-const logotext = "JOHN";
+import { FaSoundcloud } from "react-icons/fa";
+
+const logotext = "CJ";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "CJ Porter",
+    description: "I'm CJ",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I'm CJ Porter",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "I love music",
+        second: "Multidisciplanary creator",
+        third: "Sustainable solutions",
+        forth: "𖤓ᨒ↟❀☪︎"
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "Community orientated mind with training in electrical engineering and permaculture. Thorough problem solver with a passion for building spaces that can hold visions and education for sustainable creation. Fueled by love of nature and music. Enthusiastic about collaboration and teamwork.",
+    your_img_url: require("./assets/images/mountainman.jpeg"),
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "A bit about myself",
+    aboutme: "Community orientated mind with training in electrical engineering and permaculture. Thorough problem solver with a passion for building spaces that can hold visions and education for sustainable creation. Fueled by love of nature and music. Enthusiastic about collaboration and teamwork.",
 };
+
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
+        jobtitle: "Music and plant Nerd",
+        where: "Earth",
+        date: "1995 - Present",
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
+        jobtitle: "Live Sound Engineer",
+        where: "Freelance",
+        date: "2017 - Present",
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Audio/Production Engineer",
+        where: "Listen Inc.",
+        date: "2017-2021",
     },
 ];
 
 const skills = [{
-        name: "Python",
+        name: "Audio Processing",
         value: 90,
     },
     {
-        name: "Djano",
-        value: 85,
+        name: "Sound Design",
+        value: 70,
     },
     {
-        name: "Javascript",
+        name: "Music Theory",
         value: 80,
     },
     {
-        name: "React",
-        value: 60,
+        name: "Ableton skillz",
+        value: 75,
     },
     {
-        name: "Jquery",
+        name: "Audio Production",
         value: 85,
     },
 ];
 
 const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Sound Design & Music Production",
+        description: "Professional audio production, sound design, and music creation for various projects and events.",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Web Development",
+        description: "Custom web applications and websites built with modern technologies and responsive design.",
     },
     {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Sustainable Solutions",
+        description: "Implementing sustainable and eco-friendly solutions through technology and permaculture principles.",
     },
 ];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: require("./assets/images/IMG_7820.jpeg"),
+        description: "treeway",
+        link: "https://soundcloud.com/treejmusic/treeway",
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: require("./assets/images/IMG_4451.PNG"), 
+        description: "Heart Warrior Ecstatic Dance ~ Earthshake 4.4.2025",
+        link: "https://soundcloud.com/treejmusic/heart-warrior-ecstatic-dance-earthshake-4425",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: require("./assets/images/IMG_8052.JPG"),
+        description: "Sirius Community ~ Spring Awakening Ecstatic Dance",
+        link: "https://soundcloud.com/treejmusic/spring-awakening",
     },
     {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: require("./assets/images/IMG_7738 2.JPG"),
+        description: "Melt 222 ~ TreeJ Journey",
+        link: "https://soundcloud.com/treejmusic/melt-222-treej-journey",
     },
     {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: require("./assets/images/soundcraft.png"),
+        description: "Web Based Audio Synthisizer - Built with Tesnsorflow.js",
+        link: "https://tree8code.github.io/VI-WebApp/",
     },
 
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    YOUR_EMAIL: "tree8code@gmail.com",
+    YOUR_FONE: "(617)-224-8317",
+    description: "Feel free to contact me for any professional inquires or collaboration oppurtunties. ",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_SERVICE_ID: "service_xn3a3kk",
+    YOUR_TEMPLATE_ID: "template_kxphqkw",
+    YOUR_USER_ID: "zrtgszhl8A6Sy0qAa",
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    soundcloud: "https://soundcloud.com/treejmusic",
+    github: "https://github.com/tree8code",
+    facebook: "https://www.facebook.com/cj.porter.12/",
+    linkedin: "https://www.linkedin.com/in/christopher-porter-111963a3/",
+   
 };
 export {
     meta,

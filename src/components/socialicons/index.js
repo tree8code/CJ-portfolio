@@ -10,7 +10,8 @@ import {
   FaInstagram,
   FaSnapchatGhost,
   FaTiktok,
-  FaCircle
+  FaCircle,
+  FaSoundcloud
 } from "react-icons/fa";
 import { socialprofils } from "../../content_option";
 
@@ -31,16 +32,34 @@ export const Socialicons = (params) => {
   return (
     <div className="stick_follow_icon">
       <ul>
-        {Object.entries(socialprofils).map(([platform, url]) => {
-          const IconComponent = ICON_MAPPING[platform] || ICON_MAPPING.default;
-          return (
-            <li key={platform}>
-              <a href={url}>
-                <IconComponent />
-              </a>
-            </li>
-          );
-        })}
+        {socialprofils.github && (
+          <li>
+            <a href={socialprofils.github}>
+              <FaGithub />
+            </a>
+          </li>
+        )}
+        {socialprofils.facebook && (
+          <li>
+            <a href={socialprofils.facebook}>
+              <FaFacebookF />
+            </a>
+          </li>
+        )}
+        {socialprofils.twitter && (
+          <li>
+            <a href={socialprofils.twitter}>
+              <FaTwitter />
+            </a>
+          </li>
+        )}
+        {socialprofils.soundcloud && (
+          <li>
+            <a href={socialprofils.soundcloud}>
+              <FaSoundcloud />
+            </a>
+          </li>
+        )}
       </ul>
       <p>Follow Me</p>
     </div>

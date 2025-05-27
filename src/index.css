@@ -1,11 +1,13 @@
 :root {
-    --bg-color: #0c0c0c;
-    --primary-color: #0d0d0d;
+    --bg-color: #185100;
+    --primary-color: #000000;
     --secondary-color: #fff;
     --text-color: #fff;
     --text-color-2: #fff;
-    --text-color-3: rgb(204, 0, 0);
+    --text-color-3: rgb(255, 255, 255);
     --overlay-color: rgb(12 12 12 / 63%);
+    --cursor-x: 0px;
+    --cursor-y: 0px;
 }
 
 [data-theme="light"] {
@@ -14,13 +16,14 @@
     --secondary-color: #000;
     --text-color: #000;
     --text-color-2: #000;
-    --text-color-3: rgb(204, 0, 0);
+    --text-color-3: rgb(255, 255, 255);
     --overlay-color: rgb(255 255 255 / 70%);
 }
 
 html,
 body {
     height: 100%;
+    cursor: none;
 }
 
 body {
@@ -28,7 +31,7 @@ body {
     height: 100%;
     overflow-x: hidden;
     overflow-y: visible;
-    background-color: var(--bg-color);
+    background: linear-gradient(135deg, var(--bg-color) 0%, var(--primary-color) 100%);
     color: var(--text-color);
     font-family: 'Raleway', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -36,6 +39,90 @@ body {
     padding-top: 60px;
     border-left: 10px solid var(--primary-color);
     border-right: 10px solid var(--primary-color);
+}
+
+/* Cursor Styles - Uncomment the style you want to use */
+
+/* Style 1: Ring Cursor */
+/* body::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--text-color);
+    background: transparent;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 999999;
+    left: var(--cursor-x);
+    top: var(--cursor-y);
+    transform: translate(-50%, -50%);
+} */
+
+/* Style 2: Solid Dot (Current Style)
+body::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: var(--text-color);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 999999;
+    left: var(--cursor-x);
+    top: var(--cursor-y);
+    transform: translate(-50%, -50%);
+}
+*/
+
+/* Style 3: Square Cursor 
+body::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: var(--text-color);
+    position: fixed;
+    pointer-events: none;
+    z-index: 999999;
+    left: var(--cursor-x);
+    top: var(--cursor-y);
+    transform: translate(-50%, -50%);
+}
+*/
+
+/* Style 4: Cross Cursor 
+body::before {
+    content: '+';
+    font-size: 20px;
+    color: var(--text-color);
+    position: fixed;
+    pointer-events: none;
+    z-index: 999999;
+    left: var(--cursor-x);
+    top: var(--cursor-y);
+    transform: translate(-50%, -50%);
+}
+*/
+
+/* Style 5: Dot with Ring */
+body::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 999999;
+    left: var(--cursor-x);
+    top: var(--cursor-y);
+    transform: translate(-50%, -50%);
+}
+
+/* Remove cursor ring animation */
+body::after {
+    display: none;
 }
 
 ul {
@@ -79,7 +166,7 @@ code {
 }
 
 .cursor__dot div:last-child {
-    background-color: var(--text-color-3) !important;
+    background-color: rgb(255, 255, 255) !important;
 }
 
 .cursor__dot div:first-child {
@@ -93,4 +180,8 @@ code {
 
 .color_sec {
     color: var(--secondary-color);
+}
+
+a, button, .btn, [role="button"] {
+    cursor: none;
 }
