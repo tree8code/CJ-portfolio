@@ -8,7 +8,7 @@ import withRouter from "../hooks/withRouter";
 import AppRoutes from "./routes";
 import Headermain from "../header";
 import AnimatedCursor from "../hooks/AnimatedCursor";
-import BackgroundMusic from "../components/BackgroundMusic";
+import BackgroundMusic from "../components/BackgroundMusic/index.js";
 import "./App.css";
 
 function _ScrollToTop(props) {
