@@ -7,7 +7,8 @@ import {
 import withRouter from "../hooks/withRouter";
 import AppRoutes from "./routes";
 import Headermain from "../header";
-import AnimatedCursor  from "../hooks/AnimatedCursor";
+import AnimatedCursor from "../hooks/AnimatedCursor";
+import BackgroundMusic from "../components/BackgroundMusic";
 import "./App.css";
 
 function _ScrollToTop(props) {
@@ -20,8 +21,10 @@ function _ScrollToTop(props) {
 const ScrollToTop = withRouter(_ScrollToTop);
 
 export default function App() {
+  const basename = process.env.PUBLIC_URL || '';
+  
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename={basename}>
       <div className="cursor__dot">
         <AnimatedCursor
           innerSize={8}
@@ -38,6 +41,7 @@ export default function App() {
       <ScrollToTop>
         <Headermain />
         <AppRoutes />
+        <BackgroundMusic />
       </ScrollToTop>
     </Router>
   );
