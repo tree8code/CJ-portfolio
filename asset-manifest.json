@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.80cfad09.css",
+    "main.js": "/static/js/main.8483f173.js",
+    "static/media/IMG_4451.PNG": "/static/media/IMG_4451.d63656f9771dc21be17d.PNG",
+    "static/media/IMG_8052.JPG": "/static/media/IMG_8052.364b86828241d464158d.JPG",
+    "static/media/IMG_7820.jpeg": "/static/media/IMG_7820.f3d930f4a9c230180ecb.jpeg",
+    "static/media/IMG_7738 2.JPG": "/static/media/IMG_7738 2.c43dd9c484ee31fea751.JPG",
+    "static/media/soundcraft.png": "/static/media/soundcraft.f8e939f87d8653424f8b.png",
+    "static/media/mountainman.jpeg": "/static/media/mountainman.06d0aed7b585b766c000.jpeg",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.80cfad09.css",
+    "static/js/main.8483f173.js"
+  ]
+}
